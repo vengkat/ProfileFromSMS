@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF" >
+
+<!-- <RadioButton -->
+<!--     android:id="@+id/radioBtnNumber" -->
+<!--     android:layout_width="wrap_content" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:layout_centerVertical="true"   -->
+<!--     android:layout_alignParentLeft="true" -->
+<!--     android:paddingLeft="8dp"     -->
+<!--     android:text="" /> -->
+
+<!-- <Button -->
+<!--     android:id="@+id/delete_btn" -->
+<!--     android:layout_width="40dp" -->
+<!--     android:layout_height="32dp"     -->
+<!--     android:layout_centerVertical="true" -->
+<!--     android:layout_marginLeft="5dp"           -->
+<!--     android:background="@drawable/delete_icon"/> -->
+
+<TextView
+    android:id="@+id/list_item_number"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="2dp"
+    android:background="#2c3e50"
+    android:drawableLeft="@drawable/profile_icon_48_2"
+    android:drawablePadding="4dp"
+    android:paddingLeft="4dp"
+    android:text="Number"
+    android:gravity="center_vertical"
+    android:textColor="#FFFF"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+<!-- <Button -->
+<!--     android:id="@+id/delete_btn" -->
+<!--     android:layout_width="40dp" -->
+<!--     android:layout_height="32dp" -->
+<!--     android:layout_alignParentRight="true" -->
+<!--     android:layout_centerVertical="true" -->
+<!--     android:layout_marginRight="5dp"         -->
+<!--     android:background="@drawable/delete_icon"/> -->
+
+
+ 
+</RelativeLayout>

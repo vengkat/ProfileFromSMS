@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1" >
+
+         <TextView
+             android:id="@+id/txtName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#2c3e50"
+             android:padding="5dip"
+             android:text="Name"
+             android:textColor="#FFFF"
+             android:textSize="18sp" />
+ 
+         <TextView
+             android:id="@+id/txtNumber"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/txtName"
+             android:background="#2c3e50"
+             android:padding="5dip"
+             android:text="1234567890"
+             android:textColor="#FFFF"
+             android:textSize="18sp" />
+    
+         <TextView
+             android:id="@+id/txtimgLoud"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@+id/txtNumber"
+             android:layout_centerHorizontal="true"
+             android:layout_marginStart="50dp"
+              android:layout_marginLeft="50dp"
+             android:layout_marginTop="70dp"
+             android:background="@drawable/background1"
+             android:drawableStart="@drawable/phone_ring_64"
+              android:drawableLeft="@drawable/phone_ring_64"
+             android:drawablePadding="10dp"
+             android:gravity="center_vertical"
+             android:padding="5dip"
+             android:text="Put on General"
+             android:textColor="#FFFF"
+             android:textSize="24sp" />
+         
+         <TextView
+             android:id="@+id/txtimgSilent"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_marginStart="50dp"
+              android:layout_marginLeft="50dp"
+             android:layout_marginTop="20dp"
+             android:layout_below="@+id/txtimgLoud"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/background1"
+             android:drawableStart="@drawable/phone_silent_64"
+             android:drawableLeft="@drawable/phone_silent_64"
+             android:drawablePadding="10dp"
+             android:gravity="center_vertical"
+             android:padding="5dip"
+             android:text="Put on Silent"
+             android:textColor="#FFFF"
+             android:textSize="24sp" />
+    
+         <TextView
+             android:id="@+id/txtimgDelete"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginStart="50dp"
+              android:layout_marginLeft="50dp"
+             android:layout_below="@+id/txtimgSilent"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/background1"
+             android:drawableStart="@drawable/delete_64"
+             android:drawableLeft="@drawable/delete_64"
+             android:drawablePadding="10dp"
+             android:gravity="center_vertical"
+             android:padding="5dip"
+             android:text="Delete Contact"
+             android:textColor="#FFFF"
+             android:textSize="24sp" />
+         
+         <TextView
+             android:id="@+id/txtimgClose"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_marginStart="50dp"
+              android:layout_marginLeft="50dp"
+             android:layout_marginTop="20dp"
+             android:layout_below="@+id/txtimgDelete"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/background1"
+             android:drawableStart="@drawable/close_64"
+             android:drawableLeft="@drawable/close_64"
+             android:drawablePadding="10dp"
+             android:gravity="center_vertical"
+             android:padding="5dip"
+             android:text="Close"
+             android:textColor="#FFFF"
+             android:textSize="24sp" />
+
+</RelativeLayout>

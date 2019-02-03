@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<!-- 	<TextView -->
+<!--         android:id="@+id/lblContactInfo" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content"                 -->
+<!--         android:layout_marginTop="40dp" -->
+<!--         android:text="@string/strContactInfo" -->
+<!--         android:textSize="24sp"/> -->
+	
+	<TextView
+        android:id="@+id/lblPickContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblContactInfo"                
+        android:layout_marginTop="30dp"        
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Pick from phone contacts"
+        android:textSize="20sp"/>	
+<!-- <Button -->
+<!--         android:id="@+id/btnPickContact" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_below="@+id/lblPickContact" -->
+<!--         android:layout_marginStart="10dp" -->
+<!--         android:layout_marginEnd="10dp" -->
+<!--         android:onClick="pickContact" -->
+<!--         android:text="Pick Contact" /> -->
+        
+    <ImageButton
+        android:id="@+id/btnPickContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblContactInfo"        
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/lblPickContact"
+        android:background="#EEEEEE"
+        android:onClick="pickContact"
+        android:src="@drawable/phone_contact_64" />
+        
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="30dp"              
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/btnPickContact"
+        android:maxLength="20"
+        android:hint="@string/strContactName"
+        android:ems="10">        
+    </EditText>
+ 	
+<!--     <EditText -->
+<!--         android:id="@+id/editTextCountryCode" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="20dp" -->
+<!--         android:layout_marginStart="10dp" -->
+<!--         android:layout_marginEnd="10dp" -->
+<!--         android:inputType="text" -->
+<!--         android:maxLength="15" -->
+<!--         android:layout_below="@+id/editTextName" -->
+<!--         android:hint="Country Code (eg. 91 for India)" -->
+<!--         android:ems="10">         -->
+<!--     </EditText> -->
+    
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="number"
+        android:maxLength="15"
+        android:letterSpacing="0.5"
+        android:layout_below="@+id/editTextName"
+        android:hint="@string/strContactNumber"
+        android:ems="10">        
+    </EditText>
+
+       
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#1abc9c"
+        android:layout_below="@+id/editTextNumber"
+        android:text="@string/strSave"
+        android:textColor="#FFFF" 
+        android:textSize="20sp"/>
+    
+        <Button
+        android:id="@+id/btnCancel"        
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#1abc9c"
+        android:layout_below="@+id/btnSave"
+        android:text="@string/strCancel"
+        android:textColor="#FFFF" 
+        android:textSize="20sp"/>
+
+       	<TextView
+       	    android:id="@+id/lblInfo1"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_below="@+id/btnCancel"
+       	    android:layout_marginEnd="10dp"
+       	    android:layout_marginStart="10dp"
+       	    android:layout_marginTop="30dp"
+       	    android:text="1. Phone number should begin with country code (eg. 91987654321) where 91 is the country code for India"
+       	    android:textColorHint="#0000FF"
+       	    android:textSize="12sp" />
+
+   		<TextView
+   		    android:id="@+id/lblInfo2"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_below="@+id/lblInfo1"
+   		    android:layout_marginEnd="10dp"
+   		    android:layout_marginStart="10dp"
+   		    android:layout_marginTop="20dp"
+   		    android:text="2. Phone number should not contain Alphabets, white Spaces and special characters."
+   		    android:textColorHint="#0000FF"
+   		    android:textSize="12sp" />
+
+</RelativeLayout>

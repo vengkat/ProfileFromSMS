@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+    <EditTextPreference 
+            	android:title="@string/pref_user_name" 
+            	android:summary="@string/pref_user_name_summary" 
+            	android:key="prefUsername"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_profile_setting" >
+		<CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefStatus"
+            android:summary="@string/pref_Enable_Profile"
+            android:title="@string/pref_Enable_Profile_Status" >
+        </CheckBoxPreference>      
+         </PreferenceCategory>
+         
+    <PreferenceCategory android:title="@string/pref_about_app" >  
+        <TextViewPrefrence
+            android:defaultValue="ProfileFromSMS enables the profile of the mobile to be set to Silent or Loud while receiving an SMS"
+            android:key="About"
+            android:summary="@string/about_sum"
+            android:title="@string/about_title" >
+        </TextViewPrefrence>    
+         </PreferenceCategory>
+</PreferenceScreen>

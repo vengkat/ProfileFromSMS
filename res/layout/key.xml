@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+        android:id="@+id/lblkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"                
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="You can use this four digit secret key to change the sound profile of your own phone from another phone(in case if that number is not in your configured list)."
+        android:textSize="18sp"/>
+	
+	    
+    <EditText
+        android:id="@+id/editTextKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="30dp"              
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/lblkey"        
+        android:gravity="center"
+        android:maxLength="4"        
+        android:inputType="number"
+        android:letterSpacing="1.2"
+        android:textSize="24sp"
+        android:ems="50">        
+    </EditText>
+ 	
+
+    <Button
+        android:id="@+id/btnSave_key"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#1abc9c"
+        android:layout_below="@+id/editTextKey"
+        android:text="@string/strSave"
+        android:textColor="#FFFF" 
+        android:textSize="20sp"/>
+    
+        <Button
+        android:id="@+id/btnCancel_key"        
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#1abc9c"
+        android:layout_below="@+id/btnSave_key"
+        android:text="@string/strCancel"
+        android:textColor="#FFFF" 
+        android:textSize="20sp"/>
+        
+        <TextView
+            android:id="@+id/lblInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCancel_key"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="1. Key should be four digits long."
+            android:textColorHint="#0000FF"
+            android:textSize="12sp" />
+
+   		<TextView
+   		    android:id="@+id/lblInfo2"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_below="@+id/lblInfo1"
+   		    android:layout_marginEnd="10dp"
+   		    android:layout_marginStart="10dp"
+   		    android:layout_marginTop="10dp"
+   		    android:text="2. Key should not contain alphabets, white Spaces and special characters."
+   		    android:textColorHint="#0000FF"
+   		    android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="MobileAssistant.Profile.profilefromsms" >
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:checked="false"
+        android:text="Allow Profile Set"
+        android:textColorLink="#06E2B0" />
+
+    <TextView
+        android:id="@+id/lblSwitchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="20dp"
+        android:text="Profile Set is currently enabled" />
+
+   <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_below="@+id/lblSwitchStatus"
+        android:layout_marginTop="50dp"
+        android:background="#1abc9c"
+        android:text="Add Contacts"
+        android:textColor="#FFFF" />
+
+    <Button
+        android:id="@+id/btnViewContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"        
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnAdd"
+        android:background="#1abc9c"
+        android:text="View Contacts"
+        android:textColor="#FFFF" />
+
+</RelativeLayout>

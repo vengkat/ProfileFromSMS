@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.venk.profilefromsms"
+    android:versionCode="9"
+    android:versionName="PFS 1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="25" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW">
+    </uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" >        
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS">
+    </uses-permission>
+     <uses-permission android:name="android.permission.READ_CONTACTS">
+    </uses-permission>
+<!-- 	<uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"> -->
+<!--     </uses-permission> -->
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/phone_mail_64"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.venk.profilefromsms.MainActivity"
+            android:label="@string/app_name" >
+            <meta-data
+			 android:name = "default-url"
+			 android:value = "http://profilefromsms.blogspot.in/" />
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.venk.profilefromsms.ApplyChanges" />
+
+        <receiver android:name="com.venk.profilefromsms.SetProfileFromSMS" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.venk.profilefromsms.ContactListActivity"
+            android:label="@string/title_activity_contact_list" >
+        </activity>
+        <activity
+            android:name="com.venk.profilefromsms.AddContactActivity"
+            android:label="@string/title_activity_addcontact" >
+        </activity>
+        <activity
+            android:name="com.venk.profilefromsms.SMSActivity"
+            android:label="sms_activity" >
+        </activity>
+        <activity
+            android:name="com.venk.profilefromsms.KeyActivity"
+            android:label="key" >
+        </activity>
+        <activity
+            android:name="com.venk.profilefromsms.AboutActivity"
+            android:label="about_activity" >
+        </activity>
+        <activity
+            android:name="com.venk.profilefromsms.NotificationActivity"
+            android:label="notificationt_activity" >
+        </activity>
+<!--         <service -->
+<!--             android:name="com.venk.profilefromsms.ReceiverService"> -->
+<!--             </service> -->
+    </application>
+
+</manifest>
